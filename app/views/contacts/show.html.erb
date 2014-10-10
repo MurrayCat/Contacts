@@ -1,19 +1,31 @@
-<p id="notice"><%= notice %></p>
+<style>
+div.dialog {
+    width: 95%;
+    max-width: 33em;
+    margin: 4em auto 0;
+  }
+</style>
 
-<p>
+<div class="dialog">
+
+<h1><u>Contact</u></h1>
+<h3 id="notice"><%= notice %></h3>
+<h3>
   <strong>Name:</strong>
   <%= @contact.name %>
-</p>
+</h3>
 
-<p>
+<h3>
   <strong>Email:</strong>
   <%= @contact.email %>
-</p>
+</h3>
 
-<p>
+<h3>
   <strong>Mobile number:</strong>
   <%= @contact.mobile_number %>
-</p>
+</h3>
 
-<%= link_to 'Edit', edit_contact_path(@contact) %> |
-<%= link_to 'Back', contacts_path %>
+<button><%= link_to 'Edit', edit_contact_path(@contact) %> </button>
+<button><%= link_to 'Back', contacts_path %></button>
+</div>
+ <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.1.1/css/bootstrap.min.css">

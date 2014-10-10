@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contacts app</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.1.1/css/bootstrap.min.css">
+
+  <style>
+  body {
+    background-color: #444;
+    color: #2E2F30;
+    
+    font-family: arial, sans-serif;
+    margin: 0;
+  }
+
+  div.dialog {
+    width: 95%;
+    max-width: 33em;
+    margin: 4em auto 0;
+  }
+
+  div.dialog > div {
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #BBB;
+    border-top: #3b3bd4 solid 4px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+     border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+    background-color: white;
+    padding: 7px 12% 0;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+
+  h1 {
+   
+    color: #2E2F30;
+   
+  }
+
+  div.dialog > p {
+    margin: 0 0 1em;
+    padding: 1em;
+    background-color: #F7F7F7;
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #999;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-color: #DADADA;
+    color: #666;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.20);
+  }
+  </style>
+</head>
+
+<body>
+  <!-- This file lives in public/422.html -->
+  <div class="dialog">
+    <div>
+      <h1>Login</h1>
+    <form action="/contacts" >
+<h4>Username:</h4>
+     <input type="text" name"username" id="Username"></input> 
+    <h4 >Password:</h4>  <input type="password" name"password" id="Password"></input><br>
+  <button class="btn btn-primary">Login</button>
+    </form>
+<form action="/register" >
+    <button class="btn btn-primary">Register</button>
+
+  <form>
+    </div>
+  </div>
+</body>
+</html>
